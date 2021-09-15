@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Завдання 3</title>
+        <script>
+                function fun(a){
+                main_form.t_res.value = a;
+                }
+                </script>
+    </head>
+    <body onLoad = "fun('Відбулось завантаження сторінки');">
+        <form id = "main_form">
+            <input type= "text" size = "100" value="Calculate">
+            <input type = "text" size = "100" id = "t_res"
+             onMouseOver = "fun('Курсор потрапив на друге поле вводу');"
+             onMouseOut = "fun('Курсор потрапив не на друге поле вводу');">
+             <br>
+            <a href="index.html">Повернутися</a>                
+        </form>
+    </body>
+</html>

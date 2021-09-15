@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Завдання 4</title>
+        <script lang = "JavaScript">
+            function iffunc(){
+                var x, y, F;
+                x = parseInt(main_form.t_x.value);
+                y = parseInt(main_form.t_y.value);
+                if ((x - y) < 2)
+                    F = x-Math.pow(y, 2);
+                else if (x > 0) 
+                    F = x / y;
+                else
+                    F = Math.pow(x, 3) - Math.pow(y, 2);
+                
+                main_form.t_F.value = "" + F;
+            }
+        </script>
+    </head>
+    <body>
+        <form id = "main_form">
+            x<input type="text" id = "t_x" value="5"><br>
+            y<input type="text" id = "t_y" value="2"><br>
+            F<input type="text" id = "t_F" value=""><br>
+            <input type = "button" onClick = "iffunc();" value = "Розрахувати">
+        </form>
+                    
+    </body>
+</html>
